@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Targeta personal</title>
+     <script src="https://kit.fontawesome.com/50254e9a4b.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+<body class="dropdown">
+
+{% for Perfil in perfil%}
+<div class="profile-cart">
+  <div class="images"><img src="{% static 'css/yo.jpg'%}" alt=""></div>
+  <h1>{{Perfil.nombre|linebreaksbr }}</h1>
+  <p>{{Perfil.descripccion|linebreaksbr}}</p>
+  <div class="contenedor-div"><h2>{{Perfil.puesto|linebreaksbr }}</h2></div>
+
+<div>
+  <ul>
+  <a href="#" target="_blank"><i class="fa fa-linkedin" style="font-size:23px"></i></a>
+  <a href="#" target="_blank"><i class="fa fa-facebook" style="font-size:23px"></i></a>
+  <a href="#" target="_blank"><i class="fa fa-instagram" style="font-size:23px"></i></a>
+  <a href="#" target="_blank"><i class="fab fa-github" style="font-size:23px"></i></a>
+  </ul>
+</div>
+</div>
+
+{% endfor %}
+
+</body>
+</html>

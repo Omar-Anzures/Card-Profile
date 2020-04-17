@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+
+
+body {
+  background-color: #1e453e;
+  background-image: linear-gradient(314deg, #1e453e 0%, #182c25 74%);
+  
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-decoration: none;
+  
+  }
+
+  .profile-cart {
+    background-color: #ffffff;
+    width: 400px;
+    min-height: 500px;
+    box-shadow: 0 0 5px 1px rgba(52, 52, 52, 0.224);
+    position: relative;
+    border-radius: 20px;
+    transition: 2s;
+  
+  }
+  
+  .profile-cart:hover {
+    box-shadow: 0 0 15px 1px rgba(52, 52, 52, 0.25)
+  }
+  
+  .profile-cart::after {
+    content: " ";
+    background-image: linear-gradient(135deg, #FFF720 10%, #3CD500 100%);
+    clip-path: circle(50% at 50% 1%);
+    display: block;
+    min-height: 500px;
+    transition: 2s;
+    border-radius: 20px;
+  }
+  
+  .profile-cart:hover::after {
+    content: " ";
+    clip-path: circle(100% at 50% 170%);
+    transition: 2s;
+    display: block;
+    min-height: 500px;
+    transition: 8s;
+    border-radius: 20px;
+  
+  }
+  
+  
+  img {
+    width: 100px !important;
+    height: 100px !important;
+    position: absolute;
+    top: 78px;
+    left: 37%;
+    z-index: 99999999;
+    transition: 2s;
+    border-radius: 100%;
+  }
+  
+  .profile-cart:hover img {
+  
+    transform: scale(1.3) translateY(20px);
+    transition: 2s;
+  
+  }
+  
+  h1 {
+    z-index: 999;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(30, 29, 29, 0.85);
+    letter-spacing: 1px;
+    
+  }
+
+  p {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: 55%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin: 0 10px;
+    color: rgba(30, 29, 29, 0.85);
+ 
+  }
+ 
+  .contenedor-div{
+    position: absolute;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    right: 23px;
+    display: inline-flex;
+}
+h2 { 
+    z-index: 999;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(30, 29, 29, 0.85);
+    letter-spacing: 3px;
+   /* text-shadow: 2px 2px 0px rgba(37, 37, 37, 0.421);*/
+  }
+  
+  ul {
+    left:24%;
+    position: absolute;
+    background: #ffffff;
+    margin-top: 400px;
+    padding: 15px 0;
+  }
+  
+  ul a {
+    display: inline;
+    margin-right: 40px;
+  }
+  
+  ul a i {
+    color: #424651;
+    background: #ffffff;
+  }
+
+  ul a i:hover {
+    transform: scale(1.4);
+  }
